@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>586</width>
+    <height>549</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>550</width>
+         <height>444</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="labelImagen">
+          <property name="styleSheet">
+           <string notr="true">background-color:rgb(220, 220, 220);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>586</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSistema">
+    <property name="title">
+     <string>&amp;Sistema</string>
+    </property>
+    <addaction name="actionAbrir_Im_gen"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuIm_gen">
+    <property name="title">
+     <string>I&amp;mágen</string>
+    </property>
+    <addaction name="actionEscala_de_grises"/>
+    <addaction name="actionRGB"/>
+    <addaction name="separator"/>
+    <addaction name="actionRestablecer"/>
+   </widget>
+   <widget class="QMenu" name="menuRuido">
+    <property name="title">
+     <string>&amp;Ruido</string>
+    </property>
+    <addaction name="actionSal_pimienta"/>
+    <addaction name="actionGamma"/>
+   </widget>
+   <addaction name="menuSistema"/>
+   <addaction name="menuIm_gen"/>
+   <addaction name="menuRuido"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSalir">
+   <property name="text">
+    <string>&amp;Salir</string>
+   </property>
+  </action>
+  <action name="actionAbrir_Im_gen">
+   <property name="text">
+    <string>Abrir Imágen</string>
+   </property>
+  </action>
+  <action name="actionEscala_de_grises">
+   <property name="text">
+    <string>Escala de grises</string>
+   </property>
+  </action>
+  <action name="actionRGB">
+   <property name="text">
+    <string>RGB</string>
+   </property>
+  </action>
+  <action name="actionSal_pimienta">
+   <property name="text">
+    <string>Sal pimienta</string>
+   </property>
+  </action>
+  <action name="actionGamma">
+   <property name="text">
+    <string>Gamma</string>
+   </property>
+  </action>
+  <action name="actionRestablecer">
+   <property name="text">
+    <string>Restablecer</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
